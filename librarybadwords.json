@@ -1,0 +1,24 @@
+{
+  "badWordsList": [
+    "stupid", "dumb", "idiot", "imbecile", "p3n1s", "hate", "bitch", "shit", "hoe", "hijo de puta",
+    "bastard", "slut", "asshole", "cock", "dick", "motherfucker", "poop", "porn", "pornography", "potty mouth",
+    "pr0n", "prostitute", "pussy", "queer", "queer sex", "rape", "rimming", "roast beef", "rubber pussy", 
+    "rude", "sadism", "scat", "scatology", "scissor", "sex", "sex tape", "sexual", "sexually explicit", 
+    "sex toys", "sex worker", "shag", "shaved pussy", "shemale", "sissy", "skank", "slut", "slutty", 
+    "smut", "snatch", "sodomy", "spic", "splooge", "squirting", "strap-on", "strapon", "stuffing", 
+    "suicide", "swallow", "swinger", "swingers", "swinging", "threesome", "titty", "tits", "toilet", 
+    "toilet sex", "torture", "tranny", "tribbing", "tubgirl", "tubgirl.com", "twat", "twink", "vagina", 
+    "vanilla sex", "vibrator", "violet", "virgin", "vulva", "water sports", "wetback", "wetpussy", 
+    "whore", "whorehouse", "wigger", "winking", "wanking", "white trash", "yiff", "zoophilia", "zoosadism"
+  ],
+  "regexList": [
+    "p[1i!l|]n[1i!l|]s?",
+    "d[0o]mb",
+    "s[t7]upid",
+    "i[d1]iot",
+    "i[m1]becil[e3]",
+    "h[0o]e",
+    "f.*k",
+    "hijo de puta"
+  ]
+}
