@@ -1,5 +1,5 @@
-// Name: 4ndyMath.js Ver: 3.5.0 (Browser Only)
-// Made by 4ndy64 (Advanced Edition)
+// Name: 4ndyMath.js Ver: 3.5.0 
+// Made by 4ndy64 
 (() => {
   const _4ndyMath = {
     VERSION: '3.5.0',
