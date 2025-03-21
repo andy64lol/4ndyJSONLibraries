@@ -116,27 +116,13 @@
       <h2>Download JSON Files</h2>
       <p>Click the buttons below to download the JSON files:</p>
       <div class="buttons">
-        <a href="4ndyPi.json" download="4ndyPi.json" class="button">
-          4ndyPi.json
-        </a>
-        <a href="4ndyPhi.json" download="4ndyPhi.json" class="button">
-          4ndyPhi.json
-        </a>
-        <a href="4ndyProfanities.json" download="4ndyProfanities.json" class="button">
-          4ndyProfanities.json
-        </a>
-        <a href="4ndyGreetingsAndFarewells.json" download="4ndyGreetingsAndFarewells.json" class="button">
-          4ndyGreetingsAndFarewells.json
-        </a>
-        <a href="4ndyEuler.json" download="4ndyEuler.json" class="button">
-          4ndyEuler.json
-        </a>
-        <a href="4ndyRandomCities.json" download="4ndyRandomCities.json" class="button">
-          4ndyRandomCities.json
-        </a>
-        <a href="4ndyRandomUsernames.json" download="4ndyRandomUsernames.json" class="button">
-          4ndyRandomUsernames.json
-        </a>
+        <button class="button" data-file="4ndyPi.json">Download 4ndyPi.json</button>
+        <button class="button" data-file="4ndyPhi.json">Download 4ndyPhi.json</button>
+        <button class="button" data-file="4ndyProfanities.json">Download 4ndyProfanities.json</button>
+        <button class="button" data-file="4ndyGreetingsAndFarewells.json">Download 4ndyGreetingsAndFarewells.json</button>
+        <button class="button" data-file="4ndyEuler.json">Download 4ndyEuler.json</button>
+        <button class="button" data-file="4ndyRandomCities.json">Download 4ndyRandomCities.json</button>
+        <button class="button" data-file="4ndyRandomUsernames.json">Download 4ndyRandomUsernames.json</button>
       </div>
     </section>
     
@@ -144,15 +130,9 @@
       <h2>Download JavaScript Files</h2>
       <p>Click the buttons below to download the JavaScript files:</p>
       <div class="buttons">
-        <a href="4ndyMath.js" download="4ndyMath.js" class="button">
-          4ndyMath.js
-        </a>
-        <a href="4ndyUserData.js" download="4ndyUserData.js" class="button">
-          4ndyUserData.js
-        </a>
-        <a href="4ndyBetterIframes.js" download="4ndyBetterIframes.js" class="button">
-          4ndyBetterIframes.js
-        </a>
+        <button class="button" data-file="4ndyMath.js">Download 4ndyMath.js</button>
+        <button class="button" data-file="4ndyUserData.js">Download 4ndyUserData.js</button>
+        <button class="button" data-file="4ndyBetterIframes.js">Download 4ndyBetterIframes.js</button>
       </div>
     </section>
     
@@ -163,9 +143,12 @@
 
   <script>
     document.querySelectorAll('.button').forEach(button => {
-      button.addEventListener('click', (event) => {
-        event.preventDefault();
-        window.location.href = button.getAttribute('href');
+      button.addEventListener('click', function () {
+        const file = this.getAttribute('data-file');
+        const link = document.createElement('a');
+        link.href = file;
+        link.download = file;
+        link.click();
       });
     });
   </script>
